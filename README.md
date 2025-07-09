@@ -44,11 +44,10 @@ The goal was to build a modular, open-source alternative to expensive smart ligh
 
 ## ⚡ Wiring Guide
 
-1. Connect Sprig PWM GPIOs to the gates of the Thorn MOSFETs
+1. Connect Sprig Thorn MOSFET
 2. Route the MOSFET outputs to the LED panel's warm and cool channels
 3. Power the Sprig and LEDs via the buck converter from the battery
-4. Make sure all grounds are shared (common GND)
-5. Optional: Add inline fuse or switch
+4. Optional: Add inline fuse or switch
 
 ---
 
@@ -56,13 +55,13 @@ The goal was to build a modular, open-source alternative to expensive smart ligh
 
 - Firmware: **ESPHome**  
 - Integrates directly with **Home Assistant**
-- Example YAML config available in the `firmware/` folder
+- Example YAML config available [here](https://github.com/Frapais/DIY-Smart-LED-Studio-Lights/blob/main/home-assistant-configuration.yaml)
 
 ---
 
 ## 🖼️ Gallery
 
-Check the `images/` folder or my [Instructables page](https://www.instructables.com/member/YourUsername/) for build photos and setup examples.
+Check the `images/` folder or my [Instructables project](https://www.instructables.com/DIY-Smart-Studio-LED-Panel-With-ESP32-and-Home-Ass/) for build photos and setup examples.
 
 ---
 
