@@ -2,6 +2,9 @@
 
 This project documents how I converted a cheap AliExpress LED studio panel into a **smart, WiFi-connected, Home Assistant-controlled light** using my custom hardware modules and 3D printed components.
 
+<img src="images/11.3.png" alt="assembly" width="200"/> <img src="images/IMG_20250709_180710.jpg" alt="with_battery" width="193"/> <img src="images/IMG_20250709_181631.jpg" alt="working_1" width="183"/>
+
+
 The goal was to build a modular, open-source alternative to expensive smart lights — complete with **PWM dimming**, **warm/cool white mixing**, and **portable battery power**.
 
 ---
