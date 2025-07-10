@@ -74,4 +74,4 @@ Feel free to remix, improve, and share.
 
 ## 🧠 About
 
-Made by [Frapais' Lab](https://sprig-labs.com) — merging coffee, electronics, and maker tools into useful DIY creations.
+Made by [Sprig Labs](https://sprig-labs.com) — merging coffee, electronics, and maker tools into useful DIY creations.
