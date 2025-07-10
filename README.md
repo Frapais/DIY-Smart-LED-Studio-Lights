@@ -58,7 +58,7 @@ The goal was to build a modular, open-source alternative to expensive smart ligh
 
 - Firmware: **ESPHome**  
 - Integrates directly with **Home Assistant**
-- Example YAML config available [here](https://github.com/Frapais/DIY-Smart-LED-Studio-Lights/blob/main/home-assistant-configuration.yaml)
+- Example YAML config available [here](home-assistant-configuration.yaml)
 
 ---
 
