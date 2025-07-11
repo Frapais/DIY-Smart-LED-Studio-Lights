@@ -47,7 +47,7 @@ The goal was to build a modular, open-source alternative to expensive smart ligh
 
 ## ⚡ Wiring Guide
 
-1. Connect Sprig Thorn MOSFET
+1. Connect the [Sprig](https://www.tindie.com/products/spriglabs/sprig-esp32-c3-development-board/) microcontroller to the [Thorn](https://www.tindie.com/products/spriglabs/thorn-dual-mosfet-controller/) module
 2. Route the MOSFET outputs to the LED panel's warm and cool channels
 3. Power the Sprig and LEDs via the buck converter from the battery
 4. Optional: Add inline fuse or switch
