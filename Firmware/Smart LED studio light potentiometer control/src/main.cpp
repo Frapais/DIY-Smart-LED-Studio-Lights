@@ -25,14 +25,33 @@ void setup() {
   Serial.begin(115200);
 }
 
+int medianAnalogRead(int pin, int samples = 5) {
+  int values[5];
+  for (int i = 0; i < samples; i++) {
+    values[i] = analogRead(pin);
+    delay(2); // Small delay between samples
+  }
+  // Simple bubble sort for small arrays
+  for (int i = 0; i < samples - 1; i++) {
+    for (int j = i + 1; j < samples; j++) {
+      if (values[j] < values[i]) {
+        int temp = values[i];
+        values[i] = values[j];
+        values[j] = temp;
+      }
+    }
+  }
+  return values[samples / 2]; // Median value
+}
+
 void loop() {
-  // Read potentiometer values (0-4095 for ESP32 ADC)
-  int potValue1 = analogRead(potPin1);
-  int potValue2 = analogRead(potPin2);
+  // Median filter for potentiometer readings
+  int potValue1 = medianAnalogRead(potPin1);
+  int potValue2 = medianAnalogRead(potPin2);
 
   // Map to PWM range (0-255)
-  int pwmValue1 = map(potValue1, 0, 4095, 0, 255);
-  int pwmValue2 = map(potValue2, 0, 4095, 0, 255);
+  int pwmValue1 = map(potValue1, 1, 4095, 0, 255);
+  int pwmValue2 = map(potValue2, 1, 4095, 0, 255);
 
   // Set PWM duty cycle
   ledcWrite(pwmChannel1, pwmValue1);
