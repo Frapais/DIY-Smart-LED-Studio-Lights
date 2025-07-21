@@ -50,8 +50,8 @@ void loop() {
   int potValue2 = medianAnalogRead(potPin2);
 
   // Map to PWM range (0-255)
-  int pwmValue1 = map(potValue1, 1, 4095, 0, 255);
-  int pwmValue2 = map(potValue2, 1, 4095, 0, 255);
+  int pwmValue1 = map(potValue1, 10, 4095, 0, 255);
+  int pwmValue2 = map(potValue2, 10, 4095, 0, 255);
 
   // Set PWM duty cycle
   ledcWrite(pwmChannel1, pwmValue1);
