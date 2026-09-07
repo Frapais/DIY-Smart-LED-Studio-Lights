@@ -9,6 +9,11 @@ The goal was to build a modular, open-source alternative to expensive smart ligh
 
 ---
 
+## 🔋 Free ESPHome battery pack
+Building battery-powered ESP32 sensors? Check out this battery-life
+calculator (works with any ESP32 board):
+**→ [Get the free pack](https://sprig-labs.com/esp32-battery-life-calculator/?utm_source=github&utm_medium=readme)**
+
 ## 🧠 Features
 
 - ESP32-C3-based control using the [**Sprig**](https://sprig-labs.com/sprig-esp32-development-board) dev board
